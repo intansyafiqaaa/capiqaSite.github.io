@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SouL</title>
+		<link rel="Stylesheet" type="text/css" href="CSS/Style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="Stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		
+		<script>
+			function validateForm() 
+			{
+  				var x = document.forms["myForm"]["name"].value;
+  				if (x == "") 
+				{
+					alert("Name must be filled out");
+    				return false;
+  				}
+				
+				var x = document.forms["myForm"]["email"].value;
+  				if (x == "") 
+				{
+					alert("Email must be filled out");
+    				return false;
+  				}
+				
+				var x = document.forms["myForm"]["number"].value;
+  				if (x == "") 
+				{
+					alert("Number Phone must be filled out");
+    				return false;
+  				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<section class="header">
+			<nav>
+				<div class="logo">
+					<div class="animate__animated animate__fadeIn">My Life </div>
+				</div>
+			
+				<div class="nav-links">
+					<ul>
+						<li>
+							<a href="Index.html">Home</a>
+						</li>
+						
+						<li>
+							<a href="SelfLove.html">SelfLove</a>
+						</li>
+						
+						<li>
+							<a href="Soul.html">Soul</a>
+						</li>
+						
+						<li>
+							<a href="Resume.html">Resume</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			
+			<div class="container-form">
+				<form  name="myForm" id="contact-form" method="post" action="" onsubmit="return validateForm()">
+					<div class="content-box">
+						<div class="left"></div>
+						<div class="right">
+							<h2>Let's be F.R.I.E.N.D</h2>
+							<input name="name" type="text" class="field" placeholder="Your Name">
+							<input name="email" type="email" class="field" placeholder="Your Email" >
+							<input name="number" type="text" class="field" placeholder="Your Phone" >
+							<textarea name="message" class="field" placeholder="Message"></textarea>
+							<button class="btn" type="submit">Heiyo Fwens :3</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			
+			<div class = "content">
+				<center>
+					<h5> Here mySocMed: </h5>
+
+					<a href = "https://www.instagram.com/intansyapiqaaa/" target="_blank"><img src= "ICON/IG.png"></a>
+					<a href = "https://www.tiktok.com/@intansyafiqahanum" target="_blank"><img src="ICON/TT.png"></a>
+					<a href = "https://twitter.com/apikuk" target="_blank"><img src="ICON/TWEET.png"></a>
+					<a href = "https://www.facebook.com/sypiqanm" target="_blank"><img src="ICON/FB.png"></a>
+				</center>
+			</div>
+		</section>
+	</body>
+</html>
